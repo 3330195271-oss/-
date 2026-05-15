@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Black background -->
+  <rect width="400" height="160" rx="0" fill="#000000"/>
+
+  <!-- Subtle decorative line - top -->
+  <line x1="140" y1="28" x2="260" y2="28" stroke="white" stroke-width="0.3" opacity="0.3"/>
+
+  <!-- Main text: 多米摄影 -->
+  <text x="200" y="82"
+    font-family="'Noto Serif SC', 'PingFang SC', 'SimSun', 'STSong', serif"
+    font-size="44"
+    font-weight="200"
+    fill="white"
+    text-anchor="middle"
+    letter-spacing="8"
+    style="font-stretch: condensed;">
+    多米摄影
+  </text>
+
+  <!-- Subtle decorative line - below main text -->
+  <line x1="100" y1="100" x2="300" y2="100" stroke="white" stroke-width="0.3" opacity="0.2"/>
+
+  <!-- Subtitle: DUOMI_DJI_RENTAL -->
+  <text x="200" y="124"
+    font-family="'PingFang SC', 'Helvetica Neue', 'Arial', sans-serif"
+    font-size="9"
+    font-weight="300"
+    fill="white"
+    text-anchor="middle"
+    letter-spacing="5"
+    opacity="0.6">
+    DUOMI_DJI_RENTAL
+  </text>
+
+  <!-- Subtle dot ornament - top right -->
+  <circle cx="370" cy="20" r="1" fill="white" opacity="0.2"/>
+  <circle cx="370" cy="30" r="0.6" fill="white" opacity="0.15"/>
+  <circle cx="370" cy="40" r="0.3" fill="white" opacity="0.1"/>
+</svg>

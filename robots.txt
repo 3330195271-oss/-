@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://3330195271-oss.github.io/dajiang-zulin/sitemap.xml
