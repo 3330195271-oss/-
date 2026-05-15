@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import ThemeToggle from './ThemeToggle'
+import Logo from './Logo'
 
 interface NavbarProps {
   theme: 'light' | 'dark'
@@ -32,9 +33,9 @@ export default function Navbar({ theme, onToggleTheme }: NavbarProps) {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--color-nav-bg)] backdrop-blur-xl border-b border-[var(--color-border)]">
-      <div className="max-w-6xl mx-auto px-6 h-12 flex items-center justify-between">
-        <Link to="/" className="text-lg font-bold tracking-tight text-[var(--color-text)] no-underline">
-          多米摄影
+      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+        <Link to="/" className="no-underline">
+          <Logo size="sm" />
         </Link>
 
         {/* Desktop nav */}

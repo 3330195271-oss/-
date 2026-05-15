@@ -45,7 +45,7 @@ export default function Footer() {
           </motion.div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-[var(--color-border)] text-center">
+        <div className="mt-8 pt-6 border-t border-[var(--color-border)] text-center">
           <p className="text-xs text-[var(--color-text-secondary)]">
             &copy; {new Date().getFullYear()} 多米摄影. All rights reserved.
           </p>

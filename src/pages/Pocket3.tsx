@@ -57,7 +57,7 @@ export default function Pocket3() {
       </nav>
 
       <main className="pt-12">
-        <section className="py-20 sm:py-28">
+        <section className="py-14 sm:py-20">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <motion.div
               initial={{ opacity: 0, y: 24 }}

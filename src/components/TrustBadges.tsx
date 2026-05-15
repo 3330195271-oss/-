@@ -25,10 +25,10 @@ const badges = [
 
 export default function TrustBadges() {
   return (
-    <section className="py-28 sm:py-36 bg-[var(--color-card)]">
+    <section className="py-16 sm:py-20 bg-[var(--color-card)]">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
