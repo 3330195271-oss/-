@@ -1,16 +1,15 @@
 import { motion } from 'framer-motion'
 
+const BASE = import.meta.env.BASE_URL
+
 export default function Hero() {
   const scrollTo = (id: string) => {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
-    <section className="min-h-screen flex items-center pt-12 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg)] via-[var(--color-bg)] to-transparent pointer-events-none" />
-
-      <div className="max-w-6xl mx-auto px-6 w-full relative z-10">
+    <section className="min-h-screen flex items-center pt-12">
+      <div className="max-w-6xl mx-auto px-6 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           {/* Text */}
           <motion.div
@@ -48,7 +47,7 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Hero visual — product display */}
+          {/* Hero visual — real product images */}
           <motion.div
             className="flex-1 flex justify-center"
             initial={{ opacity: 0, scale: 0.92 }}
@@ -56,36 +55,32 @@ export default function Hero() {
             transition={{ duration: 0.9, ease: 'easeOut', delay: 0.2 }}
           >
             <div className="relative w-[300px] h-[340px] sm:w-[380px] sm:h-[420px]">
-              {/* Pocket 3 card */}
+              {/* Pocket 3 */}
               <motion.div
-                className="absolute left-0 top-8 w-[180px] h-[240px] sm:w-[220px] sm:h-[280px] rounded-[24px] bg-gradient-to-br from-[#e8e8ed] to-[#d2d2d7] dark:from-[#2a2a2d] dark:to-[#1a1a1f] flex items-center justify-center overflow-hidden z-20"
+                className="absolute left-0 top-8 w-[180px] h-[240px] sm:w-[220px] sm:h-[280px] rounded-[24px] bg-[var(--color-card)] flex items-center justify-center overflow-hidden z-20 p-4"
                 style={{ boxShadow: 'var(--shadow-card-hover)' }}
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
               >
-                <div className="text-center p-6">
-                  <div className="w-12 h-20 mx-auto mb-3 rounded-lg bg-[var(--color-text-secondary)]/10 flex items-center justify-center">
-                    <div className="w-2 h-2 rounded-full bg-[var(--color-text-secondary)]/20" />
-                  </div>
-                  <p className="text-sm font-semibold text-[var(--color-text)]">Pocket 3</p>
-                  <p className="text-xs text-[var(--color-text-secondary)]">¥8/天起</p>
-                </div>
+                <img
+                  src={`${BASE}images/products/pocket3.png`}
+                  alt="DJI Pocket 3"
+                  className="w-full h-full object-contain"
+                />
               </motion.div>
 
-              {/* Pocket 4 card */}
+              {/* Pocket 4 */}
               <motion.div
-                className="absolute right-0 bottom-8 w-[180px] h-[240px] sm:w-[220px] sm:h-[280px] rounded-[24px] bg-gradient-to-br from-[#e3e8f0] to-[#cdd5e0] dark:from-[#1c2230] dark:to-[#141820] flex items-center justify-center overflow-hidden z-10"
+                className="absolute right-0 bottom-8 w-[180px] h-[240px] sm:w-[220px] sm:h-[280px] rounded-[24px] bg-[var(--color-card)] flex items-center justify-center overflow-hidden z-10 p-4"
                 style={{ boxShadow: 'var(--shadow-card)' }}
                 animate={{ y: [0, 6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
               >
-                <div className="text-center p-6">
-                  <div className="w-12 h-20 mx-auto mb-3 rounded-lg bg-[var(--color-text-secondary)]/10 flex items-center justify-center">
-                    <div className="w-2 h-2 rounded-full bg-[var(--color-text-secondary)]/20" />
-                  </div>
-                  <p className="text-sm font-semibold text-[var(--color-text)]">Pocket 4</p>
-                  <p className="text-xs text-[var(--color-text-secondary)]">¥20/天起</p>
-                </div>
+                <img
+                  src={`${BASE}images/products/pocket4.png`}
+                  alt="DJI Pocket 4"
+                  className="w-full h-full object-contain"
+                />
               </motion.div>
             </div>
           </motion.div>
