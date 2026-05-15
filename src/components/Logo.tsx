@@ -3,20 +3,25 @@ interface LogoProps {
 }
 
 const sizes = {
-  sm: { main: 'text-lg', sub: 'text-[10px]' },
-  md: { main: 'text-xl', sub: 'text-[11px]' },
-  lg: { main: 'text-3xl sm:text-4xl', sub: 'text-xs sm:text-sm' },
+  sm: { primary: 'text-lg', secondary: 'text-[8px]' },
+  md: { primary: 'text-xl', secondary: 'text-[9px]' },
+  lg: { primary: 'text-[42px] sm:text-[52px]', secondary: 'text-[11px] sm:text-xs' },
 }
 
 export default function Logo({ size = 'md' }: LogoProps) {
   const s = sizes[size]
   return (
-    <div className="flex items-baseline gap-1.5 select-none" style={{ fontFamily: `-apple-system, "PingFang SC", "Microsoft YaHei", sans-serif` }}>
-      <span className={`${s.main} font-extrabold tracking-[-0.03em] text-[var(--color-text)]`}>
+    <div className="flex flex-col items-start leading-none gap-0.5 select-none">
+      <span
+        className={`${s.primary} font-black tracking-[-0.04em] text-[var(--color-text)]`}
+        style={{ letterSpacing: '-0.04em' }}
+      >
         多米摄影
       </span>
-      <span className={`${s.sub} font-semibold tracking-[0.15em] uppercase text-[var(--color-accent)] opacity-70`}>
-        DJI
+      <span
+        className={`${s.secondary} font-semibold tracking-[0.25em] text-[var(--color-text-secondary)]`}
+      >
+        DUOMI·DJI RENTAL
       </span>
     </div>
   )
