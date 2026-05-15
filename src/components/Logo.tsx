@@ -3,9 +3,9 @@ interface LogoProps {
 }
 
 const sizes = {
-  sm: { w: 160, h: 64 },
-  md: { w: 240, h: 96 },
-  lg: { w: 360, h: 144 },
+  sm: { w: 160, h: 56 },
+  md: { w: 240, h: 84 },
+  lg: { w: 360, h: 126 },
 }
 
 export default function Logo({ size = 'md' }: LogoProps) {
@@ -14,25 +14,22 @@ export default function Logo({ size = 'md' }: LogoProps) {
     <svg
       width={w}
       height={h}
-      viewBox="0 0 400 160"
+      viewBox="0 0 400 140"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       style={{ display: 'block' }}
     >
-      {/* Black background */}
-      <rect width="400" height="160" fill="#000000" />
-
       {/* Top decorative line */}
-      <line x1="140" y1="26" x2="260" y2="26" stroke="white" strokeWidth="0.3" opacity="0.3" />
+      <line x1="140" y1="16" x2="260" y2="16" stroke="var(--color-text)" strokeWidth="0.3" opacity="0.25" />
 
       {/* Main text: 多米摄影 */}
       <text
         x="200"
-        y="82"
+        y="68"
         fontFamily="-apple-system, 'PingFang SC', 'Noto Serif SC', 'STSong', 'SimSun', 'Microsoft YaHei', serif"
         fontSize="44"
         fontWeight="200"
-        fill="white"
+        fill="var(--color-text)"
         textAnchor="middle"
         letterSpacing="8"
       >
@@ -40,16 +37,16 @@ export default function Logo({ size = 'md' }: LogoProps) {
       </text>
 
       {/* Bottom line */}
-      <line x1="100" y1="100" x2="300" y2="100" stroke="white" strokeWidth="0.3" opacity="0.2" />
+      <line x1="100" y1="84" x2="300" y2="84" stroke="var(--color-text)" strokeWidth="0.3" opacity="0.18" />
 
       {/* Subtitle */}
       <text
         x="200"
-        y="124"
+        y="108"
         fontFamily="-apple-system, 'PingFang SC', 'Helvetica Neue', 'Arial', sans-serif"
         fontSize="9"
         fontWeight="300"
-        fill="white"
+        fill="var(--color-text-secondary)"
         textAnchor="middle"
         letterSpacing="5"
         opacity="0.6"
@@ -57,10 +54,10 @@ export default function Logo({ size = 'md' }: LogoProps) {
         DUOMI_DJI_RENTAL
       </text>
 
-      {/* Ornament dots - right side */}
-      <circle cx="370" cy="20" r="1" fill="white" opacity="0.2" />
-      <circle cx="370" cy="30" r="0.6" fill="white" opacity="0.15" />
-      <circle cx="370" cy="40" r="0.3" fill="white" opacity="0.1" />
+      {/* Ornament dots */}
+      <circle cx="370" cy="10" r="1" fill="var(--color-text)" opacity="0.18" />
+      <circle cx="370" cy="18" r="0.6" fill="var(--color-text)" opacity="0.12" />
+      <circle cx="370" cy="26" r="0.3" fill="var(--color-text)" opacity="0.08" />
     </svg>
   )
 }
