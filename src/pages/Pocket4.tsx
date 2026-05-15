@@ -68,7 +68,7 @@ export default function Pocket4() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <img
-                src={`${import.meta.env.BASE_URL}images/products/pocket4.png`}
+                src={`${import.meta.env.BASE_URL}images/products/pocket4.jpg`}
                 alt="DJI Pocket 4"
                 className="w-full h-full object-contain"
                 onError={e => {

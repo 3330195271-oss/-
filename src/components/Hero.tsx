@@ -63,7 +63,7 @@ export default function Hero() {
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
               >
                 <img
-                  src={`${BASE}images/products/pocket3.png`}
+                  src={`${BASE}images/products/pocket3.jpg`}
                   alt="DJI Pocket 3"
                   className="w-full h-full object-contain"
                 />
@@ -77,7 +77,7 @@ export default function Hero() {
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
               >
                 <img
-                  src={`${BASE}images/products/pocket4.png`}
+                  src={`${BASE}images/products/pocket4.jpg`}
                   alt="DJI Pocket 4"
                   className="w-full h-full object-contain"
                 />

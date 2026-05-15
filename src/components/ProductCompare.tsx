@@ -11,7 +11,7 @@ const products = [
     specs: ['1英寸 CMOS', '4K/120fps', '三轴云台', '2英寸旋转屏'],
     price: '¥8 起/天',
     route: '/pocket3',
-    img: `${BASE}images/products/pocket3.png`,
+    img: `${BASE}images/products/pocket3.jpg`,
   },
   {
     id: 'pocket4',
@@ -20,7 +20,7 @@ const products = [
     specs: ['1英寸 CMOS', '4K/240fps', '智能跟随 7.0', '107GB 内置存储'],
     price: '¥20 起/天',
     route: '/pocket4',
-    img: `${BASE}images/products/pocket4.png`,
+    img: `${BASE}images/products/pocket4.jpg`,
   },
 ]
 
