@@ -1,22 +1,66 @@
-const BASE = import.meta.env.BASE_URL
-
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg'
 }
 
 const sizes = {
-  sm: 'h-7',
-  md: 'h-9',
-  lg: 'h-14 sm:h-16',
+  sm: { w: 160, h: 64 },
+  md: { w: 240, h: 96 },
+  lg: { w: 360, h: 144 },
 }
 
 export default function Logo({ size = 'md' }: LogoProps) {
-  const h = sizes[size]
+  const { w, h } = sizes[size]
   return (
-    <img
-      src={`${BASE}logo.svg`}
-      alt="多米摄影"
-      className={`${h} w-auto`}
-    />
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 400 160"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: 'block' }}
+    >
+      {/* Black background */}
+      <rect width="400" height="160" fill="#000000" />
+
+      {/* Top decorative line */}
+      <line x1="140" y1="26" x2="260" y2="26" stroke="white" strokeWidth="0.3" opacity="0.3" />
+
+      {/* Main text: 多米摄影 */}
+      <text
+        x="200"
+        y="82"
+        fontFamily="-apple-system, 'PingFang SC', 'Noto Serif SC', 'STSong', 'SimSun', 'Microsoft YaHei', serif"
+        fontSize="44"
+        fontWeight="200"
+        fill="white"
+        textAnchor="middle"
+        letterSpacing="8"
+      >
+        多米摄影
+      </text>
+
+      {/* Bottom line */}
+      <line x1="100" y1="100" x2="300" y2="100" stroke="white" strokeWidth="0.3" opacity="0.2" />
+
+      {/* Subtitle */}
+      <text
+        x="200"
+        y="124"
+        fontFamily="-apple-system, 'PingFang SC', 'Helvetica Neue', 'Arial', sans-serif"
+        fontSize="9"
+        fontWeight="300"
+        fill="white"
+        textAnchor="middle"
+        letterSpacing="5"
+        opacity="0.6"
+      >
+        DUOMI_DJI_RENTAL
+      </text>
+
+      {/* Ornament dots - right side */}
+      <circle cx="370" cy="20" r="1" fill="white" opacity="0.2" />
+      <circle cx="370" cy="30" r="0.6" fill="white" opacity="0.15" />
+      <circle cx="370" cy="40" r="0.3" fill="white" opacity="0.1" />
+    </svg>
   )
 }
