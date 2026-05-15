@@ -81,7 +81,7 @@ export default function Pocket3() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <img
-                src="/images/products/pocket3.png"
+                src={`${import.meta.env.BASE_URL}images/products/pocket3.png`}
                 alt="DJI Pocket 3"
                 className="w-full h-full object-contain"
                 onError={e => {
@@ -127,7 +127,7 @@ export default function Pocket3() {
       <QRModal
         open={qrOpen}
         onClose={() => setQrOpen(false)}
-        qrImage="/images/pocket3/order_qr.jpg"
+        qrImage={`${import.meta.env.BASE_URL}images/pocket3/order_qr.jpg`}
         productName={`DJI Pocket 3 ${selectedPlan}`}
       />
     </>

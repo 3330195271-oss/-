@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
+const BASE = import.meta.env.BASE_URL
+
 const images = [
-  { src: '/images/gallery/DJI_20260515131141_0061_D.JPG', alt: 'Pocket 实拍样片 1' },
-  { src: '/images/gallery/DJI_20260515131302_0063_D.JPG', alt: 'Pocket 实拍样片 2' },
-  { src: '/images/gallery/DJI_20260515131355_0064_D.JPG', alt: 'Pocket 实拍样片 3' },
-  { src: '/images/gallery/wechat_01.jpg', alt: '朋友圈宣传图 1' },
-  { src: '/images/gallery/wechat_02.jpg', alt: '朋友圈宣传图 2' },
-  { src: '/images/gallery/wechat_03.jpg', alt: '朋友圈宣传图 3' },
+  { src: `${BASE}images/gallery/DJI_20260515131141_0061_D.JPG`, alt: 'Pocket 实拍样片 1' },
+  { src: `${BASE}images/gallery/DJI_20260515131302_0063_D.JPG`, alt: 'Pocket 实拍样片 2' },
+  { src: `${BASE}images/gallery/DJI_20260515131355_0064_D.JPG`, alt: 'Pocket 实拍样片 3' },
+  { src: `${BASE}images/gallery/wechat_01.jpg`, alt: '朋友圈宣传图 1' },
+  { src: `${BASE}images/gallery/wechat_02.jpg`, alt: '朋友圈宣传图 2' },
+  { src: `${BASE}images/gallery/wechat_03.jpg`, alt: '朋友圈宣传图 3' },
 ]
 
 export default function Gallery() {

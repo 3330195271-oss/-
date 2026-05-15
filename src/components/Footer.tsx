@@ -34,7 +34,7 @@ export default function Footer() {
           >
             <div className="w-36 h-36 rounded-2xl overflow-hidden bg-[var(--color-bg)] flex items-center justify-center">
               <img
-                src="/images/ewm/wechat_qr.jpg"
+                src={`${import.meta.env.BASE_URL}images/ewm/wechat_qr.jpg`}
                 alt="微信二维码"
                 className="w-full h-full object-cover"
               />
